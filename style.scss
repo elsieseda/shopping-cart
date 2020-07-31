@@ -1,0 +1,200 @@
+body{
+	font-family:Arial;
+}
+header{
+	height:50px;
+	background-color:black;
+	color:white;
+	padding:10px;
+	margin-bottom:50px;
+	nav{
+		ul{
+			text-align:center;
+				li{
+					list-style-type:none;
+					display:inline-grid;
+					margin-right:20px;
+					a{
+						text-decoration:none;
+						color:white;
+					}
+
+				}
+		}
+	}
+}
+
+.background{
+	background-image:url(images/porsche-motorsport-image.jpg);
+	width:80%;
+	height:500px;
+	margin-bottom:50px;
+	margin-left:auto;
+	margin-right:auto;
+}	
+
+.contact{
+	p{
+	}
+	ul{
+		li{
+		display:inline-grid;
+		}
+	}
+}
+.section2{
+		ul{
+			list-style-type:none;
+			li{
+				margin-bottom:50px;
+				margin-right:20px;
+				display:inline-grid;
+				a{
+					text-decoration:none;
+					color:black;
+					div{
+						text-align:center;
+						width:290px;
+						height:350px;
+						box-sizing:border-box;
+						position:relative;
+						box-shadow:0 2px 8px .5px rgba(0, 0, 0, 0.22);
+						img{
+							width:290px;
+							height:250px;
+						}
+						p{
+							display:inline-grid;
+							margin-right:50px;
+						}
+					}
+				}
+			}
+		}
+		div{
+			text-align:center;
+			.paginations{
+				li{
+					text-align:center;
+					a{
+						background-color:#f1f1f1;
+						width:35px;
+						height:35px;
+						box-sizing:border-box;
+						border-radius:50px;
+					}
+				}
+			}
+		}
+	}
+section{
+	
+	.section1{
+		width:25%;
+		float:left;
+		text-align:center;
+		div{
+			div{
+				margin-bottom:50px;
+				hr{
+					width:70%;
+				}
+				ul{
+					list-style-type:none;
+					li{
+						a{
+							text-decoration:none;
+							div{
+								img{
+									width:50px;
+									height:50px;
+								}
+								.pic p{
+									display:inline-grid;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.section2{
+		width:75%;
+		float:right;
+		ul{
+			list-style-type:none;
+			li{
+				margin-bottom:50px;
+				margin-right:20px;
+				display:inline-grid;
+				a{
+					text-decoration:none;
+					color:black;
+					div{
+						text-align:center;
+						width:290px;
+						height:350px;
+						box-sizing:border-box;
+						position:relative;
+						box-shadow:0 2px 8px .5px rgba(0, 0, 0, 0.22);
+						img{
+							width:290px;
+							height:250px;
+						}
+						p{
+							display:inline-grid;
+							margin-right:50px;
+						}
+					}
+				}
+			}
+		}
+		div{
+			text-align:center;
+			.paginations{
+				li{
+					text-align:center;
+					a{
+						background-color:#f1f1f1;
+						width:35px;
+						height:35px;
+						box-sizing:border-box;
+						border-radius:50px;
+					}
+				}
+			}
+		}
+	}
+}
+footer{
+	clear:both;
+	background-color:black;
+	color:white;
+	height:500px;
+	section{
+		padding:10px;
+		background-color:black;
+		section{
+			width:25%;
+			float:left;
+			background-color:black;
+			color:white;
+			ul{
+				li{
+					a{
+						text-decoration:none;
+						color:white;
+					}
+				}
+			}
+		}
+	}
+	.hr{
+		line-color:white;
+		height:1px;
+	}
+	.form {
+		text-align:center;
+	}
+}
