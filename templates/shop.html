@@ -1,0 +1,306 @@
+{% extends "layout.html" %}
+		{% block body %}
+		<section>
+		    <section class="section1">
+		    	<div>
+		    		<div>
+			    		<p>
+			    			search CARS
+			    		</p>
+			    		<hr>
+			    		<div>
+			    			<input type="search" name="search" placeholder="search product..">
+			    			<button>
+			    				<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span>
+			    			</button>
+			    		</div>
+		    		</div>
+		    		<div>
+			    		<p>
+			    			SEARCH BY MAKE
+			    		</p>
+			    		<hr>
+			    		<input list="makes" name="make" placeholder="Makes...">
+			    		<datalist id="makes">
+			    			<option value="Toyota">
+			    			<option value="Nissan">
+			    			<option value="Honda">
+			    			<option value="Suzuki">
+			    			<option value="Mazda">
+			    			<option value="Mitsubishi">
+			    			<option value="Subaru">
+			    			<option value="Bmw">
+			    			<option value="Mercedes">
+			    			<option value="Lexus">
+			    			<option value="Volkswagen">
+			    			<option value="Audi">
+			    			<option value="Ford">
+			    			<option value="Land Rover">
+			    			<option value="Hyundai">
+			    			<option value="Other">
+			    		</datalist>
+		    		</div>
+		    		<div>
+			    		<p> SEARCH BY TYPE</p>
+			    		<hr>
+			    		<input list="types" name="type" placeholder="types...">
+			    		<datalist id="types">
+			    			<option value="Sedan">
+			    			<option value="Coupe">
+			    			<option value="Hatchback">
+			    			<option value="SUV">
+			    			<option value="Pick Up">
+			    			<option value="Van">
+			    			<option value="Mini Van">
+			    			<option value="Wagon">
+			    			<option value="Convertible">
+			    			<option value="Motorcycle">
+			    			<option value="Bus">
+			    			<option value="Truck">
+			    			<option value="Heavy Equipemnt">
+			    			<option value="Agricultural Equipemnt">
+			    			<option value="Jet Ski">
+			    			<option value="Other">
+			    		</datalist>
+		    		</div>
+		    		<div class="text-center">
+		    			<p>
+		    				recent cars
+		    			</p>
+		    			<hr>
+		    			<ul class="justify-content-center">
+			    			<li><a href="{{url_for('shop')}}">
+									<div class="row">
+										<img src="{{url_for('static', filename='porsche-mod.png')}}" class="pic" alt="">
+										<p> The 911</p>
+									</div>
+								</a>
+							</li>
+							<li><a href="{{url_for('shop')}}">
+									<div class="row">
+										<img src="{{url_for('static', filename='porsche-model.png')}}" class="pic" alt="">
+										<p> The 911</p>
+									</div>
+								</a>
+							</li>
+							<li><a href="cat.php">
+									<div class="row">
+										<img src="{{url_for('static', filename='porsche-normal.jpg')}}" class="pic" alt="">
+										<p> The 911 </p>
+									</div>
+								</a>
+							</li>
+			    		</ul>
+
+		    		</div>
+		    		<div class="text-center">
+			    		<p>
+			    			best seller
+			    		</p>
+			    		<hr>
+			    		<ul>
+			    			<li><a href="{{url_for('shop')}}">
+									<div class="row">
+										<img src="{{url_for('static', filename='porsche-normal.jpg')}}" class="pic" alt="">
+										<p> The 911 </p>
+									</div>
+								</a>
+							</li>
+							<li><a href="{{url_for('shop')}}">
+									<div class="row">
+										<img src="{{url_for('static', filename='porsche-normal.jpg')}}" class="pic" alt="">
+										<p> The 911 </p>
+									</div>
+								</a>
+							</li>
+							<li><a href="{{url_for('shop')}}">
+									<div class="row">
+										<img src="{{url_for('static', filename='porsche-normal.jpg')}}" class="pic" alt="">
+										<p> The 911 </p>
+									</div>
+								</a>
+							</li>
+			    		</ul>
+		    		</div>
+		    	</div>
+		    </section>
+			<section class="section2">
+				<ul>
+					<li><a href="{{url_for('shop')}}">
+							<div class="three">
+								<h3>the 911</h3>
+								<img src="{{url_for('static', filename='porsche-mod.png')}}" class="pic" alt="">
+								
+								<p> The 911 </p>
+								<p class="price">2000</p>
+								<div class="row justify-content-end">
+						     	<span>
+						     		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+						     	</span>
+						     	<button>Add</button>
+		     				</div>
+							
+							</div>
+						</a>
+					</li>
+					<li><a href="{{url_for('shop')}}">
+							<div class="three">
+								<h3>the 911</h3>
+								<img src="{{url_for('static', filename='porsche-model.png')}}" class="pic" alt="">
+								
+								<p> The 911 </p>
+								<p class="price">2000</p>
+								<div class="row justify-content-end">
+						     	<span>
+						     		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+						     	</span>
+						     	<button>Add</button>
+		     				</div>
+								
+							</div>
+						</a>
+					</li>
+					<li><a href="{{url_for('shop')}}">
+							<div class="three">
+								<h3>the 911</h3>
+								<img src="{{url_for('static', filename='porsche-normal.jpg')}}" class="pic" alt="">
+								
+								<p> The 911 </p>
+								<p class="price">2000</p>
+								<div class="row justify-content-end">
+						     	<span>
+						     		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+						     	</span>
+						     	<button>Add</button>
+		     				</div>
+
+							</div>
+						</a>
+					</li>
+					<li><a href="{{url_for('shop')}}">
+							<div class="three">
+								<h3>the 911</h3>
+								<img src="{{url_for('static', filename='porsche-normal.jpg')}}" class="pic" alt="">
+								
+								<p> The 911 </p>
+								<p class="price">2000</p>
+								<div class="row justify-content-end">
+						     	<span>
+						     		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+						     	</span>
+						     	<button>Add</button>
+		     				</div>
+
+							</div>
+						</a>
+					</li>
+					<li><a href="{{url_for('shop')}}">
+							<div class="three">
+								<h3>the 911</h3>
+								<img src="{{url_for('static', filename='porsche-normal.jpg')}}" class="pic" alt="">
+								
+								<p> The 911 </p>
+								<p class="price">2000</p>
+								<div class="row justify-content-end">
+						     	<span>
+						     		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+						     	</span>
+						     	<button>Add</button>
+		     				</div>
+
+							</div>
+						</a>
+					</li>
+					<li><a href="{{url_for('shop')}}">
+							<div class="three">
+								<h3>the 911</h3>
+								<img src="{{url_for('static', filename='porsche-normal.jpg')}}" class="pic" alt="">
+								
+								<p> The 911 </p>
+								<p class="price">2000</p>
+								<div class="row justify-content-end">
+						     	<span>
+						     		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+						     	</span>
+						     	<button>Add</button>
+		     				</div>
+
+							</div>
+						</a>
+					</li>
+					<li><a href="{{url_for('shop')}}">
+							<div class="three">
+								<h3>the 911</h3>
+								<img src="{{url_for('static', filename='porsche-normal.jpg')}}" class="pic" alt="">
+								
+								<p> The 911 </p>
+								<p class="price">2000</p>
+								<div class="row justify-content-end">
+						     	<span>
+						     		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+						     	</span>
+						     	<button>Add</button>
+		     				</div>
+
+							</div>
+						</a>
+					</li>
+					<li><a href="{{url_for('shop')}}">
+							<div class="three">
+								<h3>the 911</h3>
+								<img src="{{url_for('static', filename='porsche-normal.jpg')}}" class="pic" alt="">
+								
+								<p> The 911 </p>
+								<p class="price">2000</p>
+								<div class="row justify-content-end">
+						     	<span>
+						     		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+						     	</span>
+						     	<button>Add</button>
+		     				</div>
+
+							</div>
+						</a>
+					</li>
+					<li><a href="{{url_for('shop')}}">
+							<div class="three">
+								<h3>the 911</h3>
+								<img src="{{url_for('static', filename='porsche-normal.jpg')}}" class="pic" alt="">
+								
+								<p> The 911 </p>
+								<p class="price">2000</p>
+								<div class="row justify-content-end">
+						     	<span>
+						     		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+						     	</span>
+						     	<button>Add</button>
+		     				</div>
+
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div>
+					<ul class="pagination justify-content-center ">
+						<li>
+							<a href="">
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
+								</span>
+							</a>
+						</li>
+						<li><a href="{{url_for('index')}}">1</a></li>
+						<li><a href="{{url_for('about')}}">2</a></li>
+						<li><a href="{{url_for('shop')}}">3</a></li>
+						<li>
+							<a href="">
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</section>
+		{% endblock %}
