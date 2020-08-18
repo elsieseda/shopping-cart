@@ -18,7 +18,7 @@
 		       		<li><a href="{{url_for('login')}}">login</a></li>
 			       	<li><a class="logout" href="{{url_for('logout')}}">logout</a></li>
 		       		<li>
-		       			<div class="row ">
+		       			<div class="row justify-content-end">
 					     	<span>
 					     		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
 					     	</span>
@@ -29,48 +29,13 @@
 		       
 		    </nav>
 	     </header>
-     	{% block body %}
-     	{% endblock %}
-		
-		<footer>
-			<section>
-				<section>
-					<h3>for support</h3>
-					<p>contact this number</p>
-				</section>
-				<section>
-					<h3>latest tweets</h3>
-					<p>they have the best quality spare parts</p>
-				</section>
-				<section>
-					<h3>quick links</h3>
-					<ul>
-			       		<li><a href="{{url_for('index')}}">home</a></li>
-			       		<li><a href="{{url_for('about')}}">about</a></li>
-			       		<li><a href="{{url_for('shop')}}">shop</a></li>
-			       		<li><a href="{{url_for('contact')}}">contact</a></li>
-			       		<li><a href="{{url_for('login')}}">login</a></li>
-			       		<li><a class="logout" href="{{url_for('logout')}}">logout</a></li>
-		       		</ul>
-				</section>
-				<section>
-					<h3>contact info</h3>
-					<h5>phone number</h5>
-					<p></p>
-					<h5>email address</h5>
-					<p></p>
-					<h5>location</h5>
-					<p>link</p>
-				</section>
-			</section>
-			<hr style="clear: both;">
-			<div class="form">
-				<label>SIGN UP FOR NEWSLETTER</label>
-				<input type="email" name="email" placeholder="enter your email...">
+		<div class="justify-content-center">
+			<form class="form-group " action="" method="">
+				<input type="text" class="form-control col-md-4" placeholder="email..." required>
+				<input type="password" class="form-control col-md-4" placeholder="password" required>
 				<input type="submit" name="submit" value="submit">
-			</div>
-			<hr >
-			<p class="text-center">copyright All rights reserved</p>
-		</footer>
-    </body>
+			</form>
+			<a href="{{url_for('register')}}"><button>register</button></a>
+		</div>
+	</body>
 </html>
